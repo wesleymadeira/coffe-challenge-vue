@@ -1,18 +1,17 @@
-
 <template>
-    <header class="header">
-        <div class="logo">
-            <span>COFFEE QUALITY<br>CHALLENGE</span>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html" class="pgatual">Home</a></li>
-                <li><a href="cafes.html">Cafés</a></li>
-                <li><a href="avaliar.html">Avaliar</a></li>
-                <li><a href="ranking.html">Ranking</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="logo">
+      <span>COFFEE QUALITY<br>CHALLENGE</span>
+    </div>
+    <nav>
+      <ul class="menu">
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/cafes">Cafés</RouterLink>
+        <RouterLink to="/avaliacao">Avaliação</RouterLink>
+        <RouterLink to="/ranking">Ranking</RouterLink>
+      </ul>
+    </nav>
+  </header>
 
   <RouterView />
 </template>
