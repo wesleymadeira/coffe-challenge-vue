@@ -18,7 +18,13 @@
 </script>
 
 <style scoped>
+.hero{
+  background: #ffffff;
+}
 
+.hero-texto{
+  color: black;
+}
 
 .button{
   text-decoration: none;
