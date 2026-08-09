@@ -56,9 +56,9 @@ import logo from '@/assets/img/logo.png'
 
 .text-logo {
     color: #2f2119;
-    font-size: 1.3rem;
+    font-size: 20px;
     line-height: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .menu {
