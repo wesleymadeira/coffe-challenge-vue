@@ -1,24 +1,93 @@
 <template>
-    <div>
-        <h1>{{ titulo }}</h1>
-        <p>{{ descricao }}</p>
-        <ul>
-            <li>Café Árabe - Fazenda Água Doce - 9.1</li>
-            <li>Café Japonês - Fazenda Água Roxa - 8.4</li>
-            <li>Café Português - Fazenda Água Dourada - 7.1</li>
-            <li>Café Sueco - Fazenda Água Vermelha - 3.1</li>
-        </ul>
-
-        <ul>
-            <li v-for="cafe in cafesOrdenados" :key="cafe.id">
-                Nome: {{ cafe.nome }}
-                Produtor: {{ cafe.local }}
-                Media: {{ cafe.nota }}
-            </li>
-        </ul>
-    </div>
+    <main>
+        <h1>🏆 Ranking dos Cafés</h1>
+        <div class="tabela-ranking">
+            <div class="cabecalho">
+                <span>Posição</span>
+                <span>Café</span>
+                <span>Origem</span>
+                <span>Nota Média</span>
+            </div>
+            <div class="linha">
+                <span>🥇 1º</span>
+                <span>Bourbon Amarelo</span>
+                <span>Minas Gerais</span>
+                <span>9.8</span>
+            </div>
+            <div class="linha">
+                <span>🥈 2º</span>
+                <span>Arara</span>
+                <span>Paraná</span>
+                <span>9.5</span>
+            </div>
+            <div class="linha">
+                <span>🥉 3º</span>
+                <span>Catuaí Vermelho</span>
+                <span>Espírito Santo</span>
+                <span>9.2</span>
+            </div>
+            <div class="linha">
+                <span>4º</span>
+                <span>Mundo Novo</span>
+                <span>São Paulo</span>
+                <span>8.9</span>
+            </div>
+        </div>
+    </main>
 </template>
 <script setup>
+
+</script>
+
+<style scoped>
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px 20px;
+    border-radius: 16px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2d1d16;
+}
+
+.tabela-ranking {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+}
+
+.cabecalho {
+    background: #7b4b29;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    padding: 18px;
+    font-weight: bold;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    padding: 18px;
+    border-bottom: 1px solid #ececec;
+    align-items: center;
+    transition: .3s;
+}
+
+.linha:hover {
+    background: #faf7f3;
+}
+
+.linha:last-child {
+    border: none;
+}
+</style>
+
+<!-- 
 import { computed, ref } from 'vue';
 const titulo = 'Ranking Geral'
 const descricao = 'Confira o ranking dos melhores cafés avaliados'
@@ -53,6 +122,4 @@ const cafes = ref([
     const cafesOrdenados = computed(() => {
         return [...cafes.value].sort((a,b) => b.nota - a.nota)
     })
-</script>
-
-<style scoped></style>
+         -->

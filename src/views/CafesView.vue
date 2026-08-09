@@ -9,7 +9,7 @@
                     <div class="imagem-cafe">
                         ☕
                     </div>
-                    <div>
+                    <div class="text-cafe">
                         <h2>Bourbon Amarelo</h2>
                         <p>Origem: Minas Gerais</p>
                     </div>
@@ -21,7 +21,7 @@
                     <div class="imagem-cafe">
                         ☕
                     </div>
-                    <div>
+                    <div class="text-cafe">
                         <h2>Catuaí Vermelho</h2>
                         <p>Origem: Paraná</p>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="imagem-cafe">
                         ☕
                     </div>
-                    <div>
+                    <div class="text-cafe">
                         <h2>Arara</h2>
                         <p>Origem: Espírito Santo</p>
                     </div>
@@ -45,7 +45,7 @@
                     <div class="imagem-cafe">
                         ☕
                     </div>
-                    <div>
+                    <div class="text-cafe">
                         <h2>Mundo Novo</h2>
                         <p>Origem: Bahia</p>
                     </div>
@@ -61,7 +61,7 @@
 
 <style scoped>
 main {
-    background: #f6f1ec;
+    background: white;
     max-width: 1100px;
     margin: 40px auto;
     padding: 20px 20px;
@@ -75,12 +75,14 @@ main {
 .titulo-pagina h1 {
     font-size: 36px;
     color: #2b1f18;
+    background-color: white;
 }
 
 .lista-cafes {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: white;
 }
 
 .card-cafe {
@@ -99,6 +101,7 @@ main {
     align-items: center;
     gap: 20px;
     color: black;
+    background: white;
 }
 
 .imagem-cafe {
@@ -112,13 +115,19 @@ main {
     font-size: 32px;
 }
 
+.text-cafe{
+    background-color: white;
+}
+
 .card-cafe h2 {
     font-size: 24px;
     margin-bottom: 8px;
+    background-color: white;
 }
 
 .card-cafe p {
     color: #666;
+    background-color: white;
 }
 
 .card-cafe button {

@@ -5,7 +5,7 @@
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HeaderView from './components/layout/HeaderView.vue';
+import HeaderView from './layout/HeaderView.vue';
 </script>
 
 

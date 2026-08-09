@@ -35,11 +35,14 @@ import logo from '@/assets/img/logo.png'
 }
 
 .header {
-    background-color: #faf5f0;
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
     border: 1px solid #e6e6e6;
+    border-radius: 12px 12px 0 0;
 }
 
 .logo img {
@@ -52,28 +55,32 @@ import logo from '@/assets/img/logo.png'
 .logo {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .text-logo {
-    color: #2f2119;
     font-size: 20px;
-    line-height: 20px;
     font-weight: 700;
+    line-height: 1.1;
+    color: #2f2119;
 }
 
 .menu {
     display: flex;
-    font-size: 1.3rem;
-    gap: 4vw;
-    margin: 1vw 3vw 1vw 0;
+    gap: 45px;
 }
 
 .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    padding: 28px 0 22px;
     position: relative;
+    transition: .3s;
 }
 
 .menu a:hover {
-    color: #8b5a35;
+    color: #7a4b27;
 }
 
 .menu a.router-link-exact-active::after {
@@ -90,4 +97,67 @@ import logo from '@/assets/img/logo.png'
 .router-link-active {
     color: #7a4b27;
 }
+
 </style>
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px 12px 0 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 42px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #2f2119;
+}
+
+.menu {
+    display: flex;
+    gap: 45px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    padding: 28px 0 22px;
+    position: relative;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #7a4b27;
+}
+
+.menu a.active {
+    color: #7a4b27;
+}
+
+.menu a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #8b5a35;
+    border-radius: 3px;
+}
